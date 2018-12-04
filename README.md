@@ -1,1 +1,3 @@
 # izihutch
+
+## Thème pour Wordpress
