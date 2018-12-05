@@ -80,6 +80,16 @@ header {
     color: white;
 }
 
+.alert {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #A3D439;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 2em 0 6em 0;
+}
+
 #mainHeader {
     display: flex;
     justify-content: center;
@@ -147,6 +157,26 @@ h2 a:hover {
     font-weight: 700;
 }
 
+
+h3 {
+    margin: 0.7em 0;
+    font-size: 1.7em;
+    color: #FF8904;
+}
+
+h3 a {
+    font-weight: normal;
+}
+
+h3 a:hover {
+    font-weight: 700;
+}
+
+.titleArticle {
+    font-size: 2.85em;
+    margin-bottom: 1em;
+}
+
 .category a {
     display: inline-block;
     border-radius: 15px;
@@ -157,6 +187,13 @@ h2 a:hover {
     font-weight: bold;
 }
 
+#mainContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
 #contentPost {
     margin-top: 1em;
 }
@@ -165,17 +202,8 @@ h2 a:hover {
     margin-top: 3em;;
 }
 
-#homePage {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-flow: row wrap;
-    /* border: 1px solid black; */
-}
-
-#homePage article {
+#mainContent article {
     width: 50%;
-    /* border: 1px solid black; */
 }
 
 /* Modification des commentaires */
@@ -201,6 +229,10 @@ h2 a:hover {
     color: #A3D439;
 }
 
+/* Fin modification des commentaires */
+
+/* Pagination */
+
 #pagination {
     width: 100%;
     display: flex;
@@ -214,6 +246,18 @@ h2 a:hover {
     margin-left: 0.5em;
     font-size: 2em;
 }
+
+/* Fin pagination */
+
+/* Footer Navbar */
+
+.izihutch-nav .izihutch-ul li {
+    font-size: 0.95em;
+}
+
+/* Fin Footer Navbar */
+
+/* Footer */
 
 footer {
     background-color: #EEE;
@@ -237,3 +281,5 @@ footer p a {
 footer p a:hover {
     color: #FF8904;
 }
+
+/* Footer */

@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<h2>Résultat(s) de la recherche : <?= get_search_query(); ?></h2>
+<h2>Catégories : <?php the_category(); ?></h2>
 
         <div id="mainContent">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

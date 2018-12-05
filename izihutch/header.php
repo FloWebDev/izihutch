@@ -30,18 +30,19 @@
 
     <?php
 
-        $menu = wp_nav_menu([
+        $headerMenu = wp_nav_menu([
         'theme_location' => 'headerIzi',
         'container' => 'nav',
-        'menu_class' => 'hutchinson',
+        'container_class' => 'izihutch-nav',
+        'menu_class' => 'izihutch-ul',
         'echo' => false
         ]);
 
         // $menu = str_replace('menu-item ', 'left__nav-item ', $menu);
         // $menu = str_replace(' href', ' class="left__nav-link" href', $menu);
-        $menu = str_replace('menu-menu-izihutch-container', 'nope', $menu);
+        // $menu = str_replace('menu-menu-izihutch-container', 'nope', $menu);
 
-        echo $menu;
+        echo $headerMenu;
 
     ?>
 
@@ -58,7 +59,7 @@
 get_search_form();
 
 ?>
-
+<hr>
 </header>
 
 <main>

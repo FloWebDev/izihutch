@@ -29,7 +29,8 @@ if (!function_exists('izihutch_setup')) :
 
         // Je déclare à WP les différents menus de mon thème
         register_nav_menus([
-            'headerIzi' => 'Menu présent en dessous du titre du site (haut de page)'
+            'headerIzi' => 'Menu présent en dessous du titre du site (haut de page)',
+            'footerIzi' => 'Menu présent juste au-dessus du piede de page du site (bas de page)'
         ]);
 
     }

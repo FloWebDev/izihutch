@@ -1,10 +1,10 @@
 <?php get_header() ?>
-        <div id="homePage">
+        <div id="mainContent">
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <article>
 
-                                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
                                 <p id="author">Auteur : <strong><?php the_author(); ?></strong></p>
                                 <time id="publishDate" datetime="<?php the_date('Y-m-d'); ?>">Date de publication : le <?= get_the_date(); ?></time>
