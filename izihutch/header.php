@@ -17,7 +17,7 @@
     
     <div id="mainHeader">
         <div id="avatarPicture">
-            
+        <a id="homePictureLink" href="<?= home_url(); ?>"></a>
         </div>
         <h1><a href="<?= home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
     </div>

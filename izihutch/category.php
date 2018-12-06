@@ -9,7 +9,7 @@
 
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                        <p id="author">Auteur : <strong><?php the_author(); ?></strong></p>
+                        <p id="author">Auteur : <strong><a href="<?= get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' )); ?>"><?php the_author(); ?></a></strong></p>
                         <time id="publishDate" datetime="<?php the_date('Y-m-d'); ?>">Date de publication : le <?= get_the_date(); ?></time>
 
                         <!-- Récupération des catégories -->

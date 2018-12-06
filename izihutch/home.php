@@ -2,7 +2,7 @@
 
         <div id="mainContent">
 
-                <h2>Les derniers articles</h2>
+                <h2>Accueil</h2>
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <article>
@@ -10,7 +10,7 @@
                                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
                                 <p id="author">Auteur : <strong><a href="<?= get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' )); ?>"><?php the_author(); ?></a></strong></p>
-                                <time id="publishDate" datetime="<?php the_date('Y-m-d'); ?>">Date de publication : le <?= get_the_date(); ?></time>
+                                <time id="publishDate" datetime="<?php the_date('Y-m-d'); ?>">Date de publication : <span class="dateSpan">le <?= get_the_date(); ?></span></time>
 
                                 <!-- Récupération des catégories -->
                                 <p id="categories">Catégories : 

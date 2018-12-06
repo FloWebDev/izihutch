@@ -13,9 +13,7 @@ $footerMenu = wp_nav_menu([
     'echo' => false
     ]);
 
-    // $menu = str_replace('menu-item ', 'left__nav-item ', $menu);
-    // $menu = str_replace(' href', ' class="left__nav-link" href', $menu);
-    // $secondMenu = str_replace('menu-menu-footer-hutch-container', 'nope', $secondMenu);
+    // $footerMenu = str_replace('menu-item ', 'left__nav-item ', $footerMenu);
 
     echo $footerMenu;
 
@@ -25,10 +23,9 @@ $footerMenu = wp_nav_menu([
 
 <footer>
     <p>
-        &copy; Copyright 2017 - <?= date('Y'); ?> - Florian Mathevon - Tous droits réservés <?php wp_register('- ', ''); ?>
+        &copy; Copyright <?= date('Y'); ?> - Florian Mathevon - Tous droits réservés - <a href="<?php echo wp_login_url(get_permalink()); ?>" title="Login">Connexion</a> <?php wp_register('- ', ''); ?>
         <br>
         Thème izihutch - Version 0.0.1
-        <br>
     </p>
 </footer>
 

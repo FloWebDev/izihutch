@@ -59,13 +59,19 @@ header {
     border: 3px solid #A3D439;
     border-radius: 100px;
     /* box-shadow: 2px 2px 0px 0px black; */
-    background-image: url("../img/avatar.jpg");
+    background-image: url("../img/avatar.png");
     background-position: center;
     background-size: cover;
 }
 
+#homePictureLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 h1 {
-    margin: 1rem 0.3rem;
+    margin: 1rem 0.5rem;
     font-size: 3rem;
     color: #FF8904;
     font-weight: 700;
@@ -150,6 +156,7 @@ nav ul li {
 
 article {
     padding: 1.5rem 4rem;
+    overflow: auto;
 }
 
 h2 {
@@ -190,6 +197,7 @@ h3 a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    margin: 0.1rem 0;
 }
 
 #mainContent {
@@ -197,6 +205,10 @@ h3 a:hover {
     justify-content: flex-start;
     align-items: stretch;
     flex-flow: row wrap;
+}
+
+.dateSpan {
+    font-weight: 700;
 }
 
 #contentPost {
@@ -215,25 +227,61 @@ h3 a:hover {
 /* Modification des commentaires */
 
 #comments {
-    border: 1px solid #FF8904;
+    border: 2px solid #FF8904;
     border-radius: 25px;
     padding: 0.4em 1em;
     margin-top: 3em;
 }
 
-.form-submit input[type="submit"]{
+#reply-title {
+    font-weight: 700;
+}
+
+.comment-form-comment {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+}
+
+.comment-form-comment label {
+    color: #FF8904;
+    font-weight: 700;
+}
+
+.comment-form-comment textarea {
+    border: 1px solid #FF8904;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    color: #FF8904;
+    font-weight: 700;
+}
+
+#commentform input {
+    border: 1px solid #FF8904;
+}
+
+#commentform .form-submit input[type="submit"] {
     border: 1px solid black;
     border-radius: 15px;
     background-color: #FF8904;
-    padding: 0.2em 0.7em;
-    margin-top: 0.3em;
+    padding: 0.2rem 0.7rem;
+    margin-top: 0.75rem;
     color: white;
     font-weight: 700;
 }
 
-.form-submit input[type="submit"]:hover{
-    background-color: rgb(247, 192, 129);
-    color: #A3D439;
+#commentform .form-submit input[type="submit"]:hover {
+    color: black;
+    border: 1px solid #A3D439;
 }
 
 /* Fin modification des commentaires */
@@ -257,6 +305,10 @@ h3 a:hover {
 /* Fin pagination */
 
 /* Footer Navbar */
+
+.izihutch-nav {
+    margin-top: 1.5rem;
+}
 
 .izihutch-nav .izihutch-ul li {
     font-size: 0.95em;
@@ -290,3 +342,71 @@ footer p a:hover {
 }
 
 /* Footer */
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+
+/* max de 1200px */
+
+@media (max-width: 1200px) {
+    #search {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+}
+
+/* max de 992px */
+
+@media (max-width: 992px) {
+    #container {
+        width: 95%;
+    }
+
+    h1 {
+        line-height: 105%;
+    }
+}
+
+
+/* max de 768px */
+
+@media (max-width: 768px) {
+    #container {
+        width: 97%;
+        margin: 0.5em auto;
+        padding: 0.5rem;
+    }
+
+    #mainContent article {
+        width: 100%;
+    }
+
+    .comment-form-comment textarea {
+        width: 100%;
+    }
+}
+
+/* max de 576px */
+
+@media (max-width: 576px) {
+    #container {
+        width: 100%;
+        border: 0px solid black;
+        border-radius: 0px;
+    }
+
+    #mainHeader {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: column-reverse nowrap;
+        margin-bottom: 1rem;
+    }
+
+    #description {
+        font-size: 1.4rem;
+    }
+}
