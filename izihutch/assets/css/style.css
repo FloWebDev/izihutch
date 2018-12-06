@@ -14,10 +14,6 @@ strong {
     font-weight: 700;
 }
 
-i {
-    font-style: italic;
-}
-
 a {
     color: #FF8904;
     font-weight: 700;
@@ -31,18 +27,13 @@ a:hover {
 
 nav a {
     text-decoration: underline;
-    color: #FF8904;
     text-transform: uppercase;
-}
-
-nav a:hover {
-    color: #A3D439;
 }
 
 #container {
     width: 90%;
     margin: 1em auto;
-    padding: 1em;
+    padding: 1rem;
     background-color: white;
     border: 2px solid black;
     border-radius: 25px;
@@ -53,41 +44,6 @@ header {
     margin: auto;
     text-align: center;
     position: relative;
-}
-
-#search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row nowrap;
-    position: absolute;
-    top: 20%;
-    right: 0;
-}
-
-#search input {
-    border: 1px solid #FF8904;
-}
-
-#search button {
-    border: none;
-    border-radius: 5px;
-    background-color: #FF8904;
-    padding: 0.4em;
-}
-
-#search i {
-    color: white;
-}
-
-.alert {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    color: #A3D439;
-    font-size: 1.3em;
-    font-weight: 700;
-    margin: 2em 0 6em 0;
 }
 
 #mainHeader {
@@ -109,8 +65,8 @@ header {
 }
 
 h1 {
-    margin: 1em 0.3em;
-    font-size: 3em;
+    margin: 1rem 0.3rem;
+    font-size: 3rem;
     color: #FF8904;
     font-weight: 700;
 }
@@ -120,8 +76,8 @@ h1 a:hover {
 }
 
 #description {
-    font-size: 1.6em;
-    margin: 0.3em;
+    font-size: 1.6rem;
+    margin: 0.3rem;
     font-style: italic;
 }
 
@@ -133,19 +89,73 @@ nav ul {
 }
 
 nav ul li {
-    margin: 1em 1.5em;
-    font-size: 1.3em;
+    margin: 1rem 1.5rem;
+    font-size: 1.3rem;
 }
 
+/* Menu de recherche */
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+#search input {
+    border: 1px solid #FF8904;
+}
+
+#search button {
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8904;
+    padding: 0.4rem;
+}
+
+#search i {
+    color: white;
+}
+
+/* Fin menu de recherche */
+
+/* page Search (uniquement si aucun résultat trouvé */
+
+.alert {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #A3D439;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 2em 0 3em 0;
+}
+
+/* Fin page Search (uniquement si aucun résultat trouvé */
+
+/* Séparateur header/container */
+
+#mainLine {
+    width: 100%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #A3D439;
+}
+
+/* FIN DE HEADER.PHP */
+
+
 article {
-    border: 0px solid black;
-    border-radius: 25px;
-    padding: 1.5em 4em;
+    padding: 1.5rem 4rem;
 }
 
 h2 {
-    margin: 0.7em 0;
-    font-size: 1.7em;
+    width: 100%;
+    margin: 1rem 0 1.5rem 0;
+    font-size: 1.9rem;
     color: #FF8904;
 }
 
@@ -160,7 +170,7 @@ h2 a:hover {
 
 h3 {
     margin: 0.7em 0;
-    font-size: 1.7em;
+    font-size: 1.5rem;
     color: #FF8904;
 }
 
@@ -170,11 +180,6 @@ h3 a {
 
 h3 a:hover {
     font-weight: 700;
-}
-
-.titleArticle {
-    font-size: 2.85em;
-    margin-bottom: 1em;
 }
 
 .category a {
@@ -198,12 +203,13 @@ h3 a:hover {
     margin-top: 1em;
 }
 
-#comments {
-    margin-top: 3em;;
-}
-
 #mainContent article {
     width: 50%;
+}
+
+#mainContent h2 {
+    margin: 0;
+    padding: 2rem 4em 0.5rem 4rem;
 }
 
 /* Modification des commentaires */
@@ -212,6 +218,7 @@ h3 a:hover {
     border: 1px solid #FF8904;
     border-radius: 25px;
     padding: 0.4em 1em;
+    margin-top: 3em;
 }
 
 .form-submit input[type="submit"]{

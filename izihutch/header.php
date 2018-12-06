@@ -11,15 +11,10 @@
 </head>
 <body>
 
-<?php
-
-// echo('<pre>');
-// var_dump(get_site_url()); exit;
-?>
-
 <div id="container">
 
 <header>
+    
     <div id="mainHeader">
         <div id="avatarPicture">
             
@@ -38,28 +33,21 @@
         'echo' => false
         ]);
 
-        // $menu = str_replace('menu-item ', 'left__nav-item ', $menu);
-        // $menu = str_replace(' href', ' class="left__nav-link" href', $menu);
-        // $menu = str_replace('menu-menu-izihutch-container', 'nope', $menu);
+        // $headerMenu = str_replace('menu-item ', 'left__nav-item ', $headerMenu);
 
         echo $headerMenu;
 
     ?>
 
-    <!-- <nav>
-        <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">A propos</a></li>
-        </ul>
-    </nav> -->
 
 <?php
 
 get_search_form();
 
 ?>
-<hr>
+
+<div id="mainLine"></div>
+
 </header>
 
 <main>

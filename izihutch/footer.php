@@ -1,3 +1,8 @@
+<div id="pagination">
+<p><?php previous_posts_link( '<i class="fas fa-arrow-left"></i>' ); ?></p>
+<p><?php next_posts_link( '<i class="fas fa-arrow-right"></i>' ); ?></p>
+</div>
+
 <?php
 
 $footerMenu = wp_nav_menu([
@@ -22,7 +27,7 @@ $footerMenu = wp_nav_menu([
     <p>
         &copy; Copyright 2017 - <?= date('Y'); ?> - Florian Mathevon - Tous droits réservés <?php wp_register('- ', ''); ?>
         <br>
-        Thème izihutch - Florian Mathevon - Version 0.0.1
+        Thème izihutch - Version 0.0.1
         <br>
     </p>
 </footer>

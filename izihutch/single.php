@@ -5,7 +5,7 @@
         <article>
 
 
-                <h2 class="titleArticle"><?php the_title(); ?></h2>
+                <h2><?php the_title(); ?></h2>
                 
                 <p id="author">Auteur : <strong><a href="<?= get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' )); ?>"><?php the_author(); ?></a></strong></p>
                 <time id="publishDate" datetime="<?php the_date('Y-m-d'); ?>">Date de publication : le <?= get_the_date(); ?></time>
